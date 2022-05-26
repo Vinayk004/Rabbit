@@ -1,5 +1,7 @@
 app = Flask(__name__)
 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root@localhost/Serie_A'
+
 #Model--------------------------------------------------------------------
 
 class Utente(db.Model):
